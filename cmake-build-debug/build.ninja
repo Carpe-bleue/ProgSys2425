@@ -49,12 +49,6 @@ cmake_ninja_workdir = /home/carpe-bleue/CLionProjects/TP_1_ProgSys/cmake-build-d
 
 build cmake_object_order_depends_target_TP_1_ProgSys: phony || .
 
-build CMakeFiles/TP_1_ProgSys.dir/main.cpp.o: CXX_COMPILER__TP_1_ProgSys_unscanned_Debug /home/carpe-bleue/CLionProjects/TP_1_ProgSys/main.cpp || cmake_object_order_depends_target_TP_1_ProgSys
-  DEP_FILE = CMakeFiles/TP_1_ProgSys.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/TP_1_ProgSys.dir
-  OBJECT_FILE_DIR = CMakeFiles/TP_1_ProgSys.dir
-
 build CMakeFiles/TP_1_ProgSys.dir/main.c.o: C_COMPILER__TP_1_ProgSys_unscanned_Debug /home/carpe-bleue/CLionProjects/TP_1_ProgSys/main.c || cmake_object_order_depends_target_TP_1_ProgSys
   DEP_FILE = CMakeFiles/TP_1_ProgSys.dir/main.c.o.d
   FLAGS = -g -fdiagnostics-color=always
@@ -69,7 +63,7 @@ build CMakeFiles/TP_1_ProgSys.dir/main.c.o: C_COMPILER__TP_1_ProgSys_unscanned_D
 #############################################
 # Link the executable TP_1_ProgSys
 
-build TP_1_ProgSys: CXX_EXECUTABLE_LINKER__TP_1_ProgSys_Debug CMakeFiles/TP_1_ProgSys.dir/main.cpp.o CMakeFiles/TP_1_ProgSys.dir/main.c.o
+build TP_1_ProgSys: C_EXECUTABLE_LINKER__TP_1_ProgSys_Debug CMakeFiles/TP_1_ProgSys.dir/main.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/TP_1_ProgSys.dir
   POST_BUILD = :
