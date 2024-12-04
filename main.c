@@ -3,14 +3,22 @@
 //
 
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "Q1.h"
+#include "Q2.h"
+#include "Q3.h"
 
-int main(int argc, char *argv[]) {
-     q1();
+char buf[BUFSIZE];
+
+int main(int argc, char *argv[]){
+     welcome();
      while (1) {
-          q3();
+          read_command(buf);
+          exec_command(buf,&sons_exec_status);
+          command_exit(buf);
 
      }
-
-
 
 }

@@ -12,7 +12,7 @@
 
 #define COMAND_ERROR "There was an error parsing the command line"
 #define BUFSIZE 128
-#define WelcomeMessage "Bienvenue dans le Shell ENSEA.\nPour quitter, tapez 'exit'.\nenseah \n"
-#define prompt "enseah% "
+
+int sons_exec_status = 1;
 
 #endif //MAIN_H

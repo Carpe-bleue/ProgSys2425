@@ -2,37 +2,39 @@
 // Created by carpe-bleue on 27/11/24.
 //
 
-#include "main.h"
+#include "Q2.h"
 
-char read_command(char *buf) {
-    read(1,buf,BUFSIZE);
+void read_command(char *command){
+    int numberOfelements = (int) read(STDIN_FILENO, command, sizeof(command));
+    //command[numberOfelements-1] = '\0';
 }
 
-void exec_command(char * command) {
-    int son_exec_status;
+void exec_command(char * command,int* status) {
+    //int son_exec_status;
     if (fork() == 0) {
         //command[strcspn(command, "\n")] = '\0';
+
+        /**
         size_t len = strlen(command);
         if (len > 0 && command[len - 1] == '\n') {
             command[len - 1] = '\0';  // Replace the newline with the null terminator
         }
+        **/
         execlp(command, command, NULL);
         exit(EXIT_FAILURE);
     }
     else {
-        //sleep(&son_exec_status);
+        wait (status);
     }
 }
 
-
-
-void q2() {
-    char buf[BUFSIZE];
+/**
+void q2(){
     read_command(buf);
-    exec_command(buf);
+    exec_command(buf,sons_exec_status);
 
 }
-
+**/
 
 
 /*

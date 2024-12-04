@@ -9,4 +9,7 @@ add_executable(TP_1_ProgSys
         Q2.c
         main.h
         Q3.c
+        Q2.h
+        Q1.h
+        Q3.h
 )
