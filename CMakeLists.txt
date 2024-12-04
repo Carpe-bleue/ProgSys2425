@@ -4,4 +4,9 @@ project(TP_1_ProgSys)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(TP_1_ProgSys
-        main.c)
+        main.c
+        Q1.c
+        Q2.c
+        main.h
+        Q3.c
+)
