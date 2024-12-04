@@ -9,6 +9,7 @@
 #include "Q1.h"
 #include "Q2.h"
 #include "Q3.h"
+#include "Q4.h"
 
 char buf[BUFSIZE];
 
@@ -16,6 +17,7 @@ int main(int argc, char *argv[]){
      welcome();
      while (1) {
           read_command(buf);
+          return_status(&sons_exec_status);
           exec_command(buf,&sons_exec_status);
           command_exit(buf);
 

@@ -12,4 +12,8 @@ add_executable(TP_1_ProgSys
         Q2.h
         Q1.h
         Q3.h
+        Q4.c
+        Q4.h
+        Q5.c
+        Q5.h
 )

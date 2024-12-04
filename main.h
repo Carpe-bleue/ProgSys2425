@@ -8,7 +8,6 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 #define COMAND_ERROR "There was an error parsing the command line"
 #define BUFSIZE 128

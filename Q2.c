@@ -6,7 +6,7 @@
 
 void read_command(char *command){
     int numberOfelements = (int) read(STDIN_FILENO, command, sizeof(command));
-    //command[numberOfelements-1] = '\0';
+    command[numberOfelements-1] = '\0';
 }
 
 void exec_command(char * command,int* status) {
