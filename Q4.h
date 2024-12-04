@@ -12,6 +12,7 @@
 
 
 void return_status(int status);
+void write_int(int num);
 
 #define BUFSIZE 128
 
